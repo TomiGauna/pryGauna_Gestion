@@ -34,12 +34,16 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.btnLogIn = new System.Windows.Forms.Button();
+            this.strConnectionStatus = new System.Windows.Forms.StatusStrip();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tstrConnectioStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.strConnectionStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblLogIn
             // 
             this.lblLogIn.AutoSize = true;
-            this.lblLogIn.Location = new System.Drawing.Point(145, 24);
+            this.lblLogIn.Location = new System.Drawing.Point(257, 44);
             this.lblLogIn.Name = "lblLogIn";
             this.lblLogIn.Size = new System.Drawing.Size(35, 13);
             this.lblLogIn.TabIndex = 0;
@@ -49,14 +53,14 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(40, 103);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.Size = new System.Drawing.Size(457, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(39, 179);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 20);
+            this.textBox2.Size = new System.Drawing.Size(458, 20);
             this.textBox2.TabIndex = 2;
             // 
             // lblPassword
@@ -79,18 +83,45 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(214, 221);
+            this.btnLogIn.Location = new System.Drawing.Point(422, 220);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 5;
             this.btnLogIn.Text = "button1";
             this.btnLogIn.UseVisualStyleBackColor = true;
             // 
+            // strConnectionStatus
+            // 
+            this.strConnectionStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstrConnectioStatus});
+            this.strConnectionStatus.Location = new System.Drawing.Point(0, 273);
+            this.strConnectionStatus.Name = "strConnectionStatus";
+            this.strConnectionStatus.Size = new System.Drawing.Size(556, 22);
+            this.strConnectionStatus.TabIndex = 6;
+            this.strConnectionStatus.Text = "statusStrip1";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(556, 25);
+            this.toolStrip1.TabIndex = 8;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tstrConnectioStatus
+            // 
+            this.tstrConnectioStatus.Name = "tstrConnectioStatus";
+            this.tstrConnectioStatus.Size = new System.Drawing.Size(118, 17);
+            this.tstrConnectioStatus.Text = "toolStripStatusLabel1";
+            this.tstrConnectioStatus.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 295);
+            this.ClientSize = new System.Drawing.Size(556, 295);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.strConnectionStatus);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblPassword);
@@ -100,6 +131,8 @@
             this.Name = "frmMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.strConnectionStatus.ResumeLayout(false);
+            this.strConnectionStatus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +146,9 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.StatusStrip strConnectionStatus;
+        private System.Windows.Forms.ToolStripStatusLabel tstrConnectioStatus;
+        private System.Windows.Forms.ToolStrip toolStrip1;
     }
 }
 
