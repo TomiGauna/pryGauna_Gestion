@@ -14,9 +14,11 @@ namespace pryGauna_Gestion
     public partial class frmMain : Form
     {
         clsUsuario clsUsuario;
+        frmDisplay frm;
         public frmMain()
         {
             InitializeComponent();
+            
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -32,6 +34,22 @@ namespace pryGauna_Gestion
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            if (txtUser.Text == "" || txtPassword.Text == "")
+            {
+                clsUsuario.ValidarUsuario(txtUser.Text, txtPassword.Text);
+            }
+
+            frm = new frmDisplay(txtUser.Text);
+            frm.Show();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

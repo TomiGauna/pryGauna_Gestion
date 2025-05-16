@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.lblLogIn = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.strConnectionStatus = new System.Windows.Forms.StatusStrip();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tstrConnectioStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.strConnectionStatus.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,19 +49,20 @@
             this.lblLogIn.TabIndex = 0;
             this.lblLogIn.Text = "label1";
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(457, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtUser.Location = new System.Drawing.Point(40, 103);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(457, 20);
+            this.txtUser.TabIndex = 1;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 179);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(458, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtPassword.Location = new System.Drawing.Point(39, 179);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(458, 20);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // lblPassword
             // 
@@ -89,6 +90,7 @@
             this.btnLogIn.TabIndex = 5;
             this.btnLogIn.Text = "button1";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // strConnectionStatus
             // 
@@ -100,6 +102,13 @@
             this.strConnectionStatus.TabIndex = 6;
             this.strConnectionStatus.Text = "statusStrip1";
             // 
+            // tstrConnectioStatus
+            // 
+            this.tstrConnectioStatus.Name = "tstrConnectioStatus";
+            this.tstrConnectioStatus.Size = new System.Drawing.Size(118, 17);
+            this.tstrConnectioStatus.Text = "toolStripStatusLabel1";
+            this.tstrConnectioStatus.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -107,13 +116,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(556, 25);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // tstrConnectioStatus
-            // 
-            this.tstrConnectioStatus.Name = "tstrConnectioStatus";
-            this.tstrConnectioStatus.Size = new System.Drawing.Size(118, 17);
-            this.tstrConnectioStatus.Text = "toolStripStatusLabel1";
-            this.tstrConnectioStatus.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // frmMain
             // 
@@ -125,8 +127,8 @@
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblLogIn);
             this.Name = "frmMain";
             this.Text = "Form1";
@@ -141,8 +143,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblLogIn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button btnLogIn;
