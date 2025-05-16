@@ -16,5 +16,12 @@ namespace pryGauna_Gestion
         {
             InitializeComponent();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblLogIn.Text = "LOGIN";
+            lblUser.Text = "User";
+            lblPassword.Text = "Password";
+        }
     }
 }
