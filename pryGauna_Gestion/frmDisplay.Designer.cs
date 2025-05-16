@@ -39,7 +39,7 @@
             // 
             // btnGet
             // 
-            this.btnGet.Location = new System.Drawing.Point(828, 415);
+            this.btnGet.Location = new System.Drawing.Point(696, 423);
             this.btnGet.Name = "btnGet";
             this.btnGet.Size = new System.Drawing.Size(75, 23);
             this.btnGet.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.dgvDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDisplay.Location = new System.Drawing.Point(12, 58);
             this.dgvDisplay.Name = "dgvDisplay";
-            this.dgvDisplay.Size = new System.Drawing.Size(891, 351);
+            this.dgvDisplay.Size = new System.Drawing.Size(759, 351);
             this.dgvDisplay.TabIndex = 1;
             // 
             // toolStrip1
@@ -64,7 +64,7 @@
             this.tslDate});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(928, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(783, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 458);
+            this.ClientSize = new System.Drawing.Size(783, 458);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dgvDisplay);
             this.Controls.Add(this.btnGet);

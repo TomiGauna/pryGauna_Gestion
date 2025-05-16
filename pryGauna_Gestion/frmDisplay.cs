@@ -16,7 +16,7 @@ namespace pryGauna_Gestion
         public frmDisplay(string user)
         {
             InitializeComponent();
-            tslUsername.Text = user + " - ";
+            tslUsername.Text = user + " -";
         }
 
         private void frmDisplay_Load(object sender, EventArgs e)
